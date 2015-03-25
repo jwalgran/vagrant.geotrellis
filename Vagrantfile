@@ -55,7 +55,7 @@ Vagrant.configure("2") do |config|
 
     # VirtualBox settings
     worker.vm.provider :virtualbox do |vb|
-      vb.customize ["modifyvm", :id, "--memory", "3048"]
+      vb.customize ["modifyvm", :id, "--memory", "4096"]
       vb.cpus = 8
     end
 
